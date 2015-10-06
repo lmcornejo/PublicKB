@@ -1,6 +1,6 @@
 {{{
-  "title": "Security Best Practices for CenturyLink Cloud and AlertLogic",
-  "date": "9-24-2015",
+  "title": "Security with CenturyLink Cloud and AlertLogic Threat Manager",
+  "date": "10-06-2015",
   "author": "Luis Cornejo",
   "attachments": [],
   "contentIsHTML": false,
@@ -8,10 +8,13 @@
 }}}
 
 
-### Table of Contents.
-
-* [Audience](#Audience)
+**Introduction**|**Planing**|**Reference**
+-----------------|------------|--------------
+[Audience](#Audience)| [Deployment Scenarios](#Deployments)|
+[Considerations](#Considerations)|
+[Prerequisites](#Prerequisites)|
 <BR>
+<HR>
 
 ### Audience.
 
@@ -19,21 +22,20 @@ This article should assist individuals interested in data security and also IT p
 
 As with other CenturyLink Cloud ecosystem partners, the content of this guide is focused on the gained advantages by the inclusion of third party products and services in combination with CenturyLink Cloud features. It is intended to provide complementary measures to security policies, standards, and process developed in-house and it should not be considered a substitution of these.
 
-
 **Category**|**Topics**
-|-------------|-----------------------------|
-|Security     |User access controls
+-------------|-----------------------------|
+Security     |User access controls
 |				  |Intrusion detection (IDS)
 |				  |Log Management
 |				  |Firewall rules & network zones
 
+<BR>
 ### Considerations.
 
-Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](https://www.ctl.io/knowledge-base/ecosystem-partners/marketplace-guides/getting-started-with-alert-logic-threat-manager-partner-template/).
+Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../ecosystem-partners/marketplace-guides/getting-started-with-alert-logic-threat-manager-partner-template/).
 <br>
 
 AlertLogic's official documentation is available in their [Webhelp site](http://docs.alertlogic.com/).
-
 
 #### Prerequisites.
 
@@ -42,12 +44,13 @@ AlertLogic's official documentation is available in their [Webhelp site](http://
 * Understanding of CenturyLink Cloud sub-account hierarchies for multi-tenant environments.
 
 
+<BR>
 ### What do AlertLogic products do?
 
 
 ### How does it work?
 
-AlertLogic Threat manager and Log manager products work similarly within CenturyLink cloud. There are three required components to successfully benefit from AlertLogic's capabilities:
+AlertLogic Threat manager and Log manager products work similarly within CenturyLink cloud. There are three required components to successfully benefit from AlertLogic's services:
 
 **Component**|**Purpose**
 -----------------|------------------------------
@@ -55,10 +58,8 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 **Host Agent**|An individual software agent installed in each protected host, able to scan network packets and report threats that match AlertLogic's signatures and also can watch host logs and report events back to the appliance.
 **AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated.
 
-
+<BR><HR>
 ### 1. Planning a deployment.
-
-<BR>
 
 ### 2. Deployment Scenarios
 
@@ -72,9 +73,10 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 
 ### 3. Deploy
 
+<BR><HR>
 ### Resources
 
-### Vendor documentation
+#### Vendor documentation
 
 [AlertLogic Threat Manager Documentation](http://docs.alertlogic.com/#docs/threat_manager/about_threat_manager.htm%3FTocPath%3DThreat%2520Manager%7C_____0)
 
