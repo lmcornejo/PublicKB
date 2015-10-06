@@ -32,7 +32,7 @@ Security     |User access controls
 <BR>
 ### Considerations.
 
-Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../ecosystem-partners/marketplace-guides/getting-started-with-alert-logic-threat-manager-partner-template/).
+Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../ecosystem%20partners/marketplace%20guides/getting-started-with-alert-logic-threat-manager-partner-template/).
 <br>
 
 AlertLogic's official documentation is available in their [Webhelp site](http://docs.alertlogic.com/).
