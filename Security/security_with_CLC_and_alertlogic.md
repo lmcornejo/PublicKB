@@ -29,20 +29,18 @@ Security     |User access controls
 |				  |Log Management
 |				  |Firewall rules & network zones
 
-<BR>
 ### Considerations.
 
-Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../Ecosystem%20Partners/Marketplace%20guides/getting-started-with-alert-logic-threat-manager-partner-template/).
+Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../Ecosystem%20Partners/Marketplace%20Guides/getting-started-with-alert-logic-threat-manager-partner-template/).
 <br>
 
 AlertLogic's official documentation is available in their [Webhelp site](http://docs.alertlogic.com/).
-
+s
 #### Prerequisites.
 
 * A Centurylink Cloud account.
 * An AlertLogic account with activated *Threat Manager* services, *Log Manager* or both.
 * Understanding of CenturyLink Cloud sub-account hierarchies for multi-tenant environments.
-
 
 <BR>
 ### What do AlertLogic products do?
