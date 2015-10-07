@@ -54,20 +54,20 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 -----------------|------------------------------
 **Virtual Appliance**|Serves as a centralized collection point for security events reported by the protected hosts (threats and logs) and for management of the environment. The appliance can also provide signature updates and perform internal vulnerability assessments.
 **Host Agent**|An individual software agent installed in each protected host, able to scan network packets and report threats that match AlertLogic's signatures and also can watch host logs and report events back to the appliance.
-**AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated.
+**AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated. [Access it here.](https://invision.alertlogic.net/)
 
 
 <BR><HR>
 
 ### Deployment Scenarios
 
-#### Single tenant
+#### -Single tenant
 
 **Situation:** A single application or platform that is self-contained and self sufficient, where all elements of the application are deployed in one account and no network connections to other accounts or sites exist.
 
 ![IDS single tenant](../images/alertlogic/tmgr_net.png)
 
-##### Multi-tenant, shared VLANs
+#### -Multi-tenant, shared VLANs
 
 **Situation:** 
 
@@ -79,17 +79,22 @@ Least complexity of firewall rules|
 
 ![IDS multitenant](../images/alertlogic/subacct_shared.png) 
 
-##### Multi-tenant, private VLANs using inter-account firewall rules
+#### -Multi-tenant, private VLANs using inter-account firewall rules
 
 **Situation:** 
 
-##### Hybrid: cloud / on-premise
+#### -Hybrid: cloud / on-premise
 
 **Situation:** 
 
 <BR><HR>
-### Deployment settings
+### Responsibilities
 
+Task|Responsible|Notes
+------|-------------|-------
+Provision AlertLogic Account|Customer, AlertLogic Sales| Customers engage AlertLogic sales directly to select products and level of access to their features.
+Pre-deployment Planning|Customer, CenturyLink|  
+Deploy virtual appliance|CenturyLink|The customer must request deployment via service task
 
 
 <BR><HR>
@@ -100,3 +105,8 @@ Least complexity of firewall rules|
 [AlertLogic Threat Manager Documentation](http://docs.alertlogic.com/#docs/threat_manager/about_threat_manager.htm%3FTocPath%3DThreat%2520Manager%7C_____0)
 
 [AlertLogic Log Manager Documentation](http://docs.alertlogic.com/#docs/log_manager/about_log_manager.htm#get%3FTocPath%3DLog%2520Manager%7C_____0)
+
+
+#### [AlertLogic Downloads *(Requires access to AlertLogic)*](https://invision.alertlogic.net/tm/support/downloads)
+
+
