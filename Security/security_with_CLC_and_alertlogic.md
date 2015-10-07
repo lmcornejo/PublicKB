@@ -35,16 +35,16 @@ Information about AlertLogic security products and services, additional referenc
 <br>
 
 AlertLogic's official documentation is available in their [Webhelp site](http://docs.alertlogic.com/).
-s
+
 #### Prerequisites.
 
 * A Centurylink Cloud account.
 * An AlertLogic account with activated *Threat Manager* services, *Log Manager* or both.
 * Understanding of CenturyLink Cloud sub-account hierarchies for multi-tenant environments.
 
-<BR>
 ### What do AlertLogic products do?
 
+AlertLogic's suite of products assist IT and security departments to detect, alert, store and correlate security related events occurring in an application and it's underlying infrastructure. Their detection capability is based on thousands of matching signatures to known events and AlertLogic's NOC continually adds signatures for new events as they are detected by hundreds of worldwide appliances or as issued by the security community.
 
 ### How does it work?
 
@@ -52,24 +52,45 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 
 **Component**|**Purpose**
 -----------------|------------------------------
-**Virtual Appliance**|Services as a centralized point for collection of events (threats and logs) and for management of the environment. The appliance can also provide signature updates and perform internal vulnerability assessments.
+**Virtual Appliance**|Serves as a centralized collection point for security events reported by the protected hosts (threats and logs) and for management of the environment. The appliance can also provide signature updates and perform internal vulnerability assessments.
 **Host Agent**|An individual software agent installed in each protected host, able to scan network packets and report threats that match AlertLogic's signatures and also can watch host logs and report events back to the appliance.
 **AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated.
 
+
 <BR><HR>
-### 1. Planning a deployment.
 
-### 2. Deployment Scenarios
+### Deployment Scenarios
 
-#### a) Single tenant
+#### Single tenant
+
+**Situation:** A single application or platform that is self-contained and self sufficient, where all elements of the application are deployed in one account and no network connections to other accounts or sites exist.
 
 ![IDS single tenant](../images/alertlogic/tmgr_net.png)
 
-#### b) Multi-tenant
+##### Multi-tenant, shared VLANs
 
-![IDS multitenant](../images/alertlogic/subacct_shared.png)
+**Situation:** 
 
-### 3. Deploy
+**Pros**|**Cons**
+--------|----------
+Simpler network topology|Traffic across accounts is visible
+A single appliance may be used|The appliance may reach capacity.
+Least complexity of firewall rules|
+
+![IDS multitenant](../images/alertlogic/subacct_shared.png) 
+
+##### Multi-tenant, private VLANs using inter-account firewall rules
+
+**Situation:** 
+
+##### Hybrid: cloud / on-premise
+
+**Situation:** 
+
+<BR><HR>
+### Deployment settings
+
+
 
 <BR><HR>
 ### Resources
