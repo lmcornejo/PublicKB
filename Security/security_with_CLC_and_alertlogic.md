@@ -18,9 +18,15 @@
 
 ### Audience.
 
-This article should assist individuals interested in data security and also IT professionals who are concerned about security threats and compliance whether an impending deployment is subject to regulation or not. This guide is not intended to be exhaustive, but it may rather be considered general advice given that security standards and threats continuously evolve. It is however, intended to provide a baseline in few areas of common security practices as a starting point for considerations prior to any implementation.
+This article should assist individuals interested in data security and also IT professionals concerned about security threats and compliance. 
 
-As with other CenturyLink Cloud ecosystem partners, the content of this guide is focused on the gained advantages by the inclusion of third party products and services in combination with CenturyLink Cloud features. It is intended to provide complementary measures to security policies, standards, and process developed in-house and it should not be considered a substitution of these.
+This guide is not intended to be exhaustive, but it may rather be considered general advice given that security standards and threats continuously evolve. We hope it provide a baseline in few areas of security as a starting point for considerations prior to any implementation.
+
+As with other CenturyLink Cloud ecosystem partners, the content of this guide is focused on the gained advantages by the inclusion of third party products and services in combination with CenturyLink Cloud features. 
+
+It is also intended to provide complementary measures to security policies, standards, and process developed in-house and it should not be considered a substitution of these.
+
+This article touches on the following subjects:
 
 **Category**|**Topics**
 -------------|-----------------------------|
@@ -29,6 +35,7 @@ Security     |User access controls
 |				  |Log Management
 |				  |Firewall rules & network zones
 
+<BR>
 ### Considerations.
 
 Information about AlertLogic security products and services, additional references, and how to contact or purchase AlertLogic can be found in our [Public Knowledge Base](../ecosystem-partners/marketplace-guides/getting-started-with-alert-logic-threat-manager-partner-template/).
@@ -38,14 +45,31 @@ AlertLogic's official documentation is available in their [Webhelp site](http://
 
 #### Prerequisites.
 
-* A Centurylink Cloud account.
-* An AlertLogic account with activated *Threat Manager* services, *Log Manager* or both.
-* Understanding of CenturyLink Cloud sub-account hierarchies for multi-tenant environments.
+* A CenturyLink Cloud account.
+* An AlertLogic account activated with *Threat Manager*, *Log Manager* or both.
+* Understanding of CenturyLink Cloud sub-account hierarchy for multi-tenant environments.
 
+
+#### Compatibility.
+
+At the time of this writing the AlertLogic agent supports:
+
+* Windows Server: 2003 SP1 | 2008 | 2012.
+* Debian Linux: 5.x | 6.x | 7.x
+* Red Hat Enterprise Linux: 6.x | 7.x
+* Ubuntu Linux: 10.x | 12.x | 14.x
+
+Up to date OS support is available directly from AlertLogic [here.](http://docs.alertlogic.com/#docs/install_and_configure/agents/agentopsupp.htm)
+
+
+<BR>
 ### What do AlertLogic products do?
 
-AlertLogic's suite of products assist IT and security departments to detect, alert, store and correlate security related events occurring in an application and it's underlying infrastructure. Their detection capability is based on thousands of matching signatures to known events and AlertLogic's NOC continually adds signatures for new events as they are detected by hundreds of worldwide appliances or as issued by the security community.
+AlertLogic's suite of products assist IT and security departments to detect, alert, store and correlate security related events occurring in applications and their underlying infrastructure. 
 
+AlertLogic's detection abilities are based on thousands of matching signatures of known events. AlertLogic's NOC continually keeps adding signatures for new events as they are detected by hundreds of worldwide appliances or shortly after issued by the security community.
+
+<BR>
 ### How does it work?
 
 AlertLogic Threat manager and Log manager products work similarly within CenturyLink cloud. There are three required components to successfully benefit from AlertLogic's services:
@@ -54,7 +78,14 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 -----------------|------------------------------
 **Virtual Appliance**|Serves as a centralized collection point for security events reported by the protected hosts (threats and logs) and for management of the environment. The appliance can also provide signature updates and perform internal vulnerability assessments.
 **Host Agent**|An individual software agent installed in each protected host, able to scan network packets and report threats that match AlertLogic's signatures and also can watch host logs and report events back to the appliance.
-**AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated. [Access it here.](https://invision.alertlogic.net/)
+**AlertLogic Portal**|A centralized UI where a virtual appliance can report events to and where all collected security information is consolidated. [Access it here (account is required).](https://invision.alertlogic.net/)
+
+<BR>
+Once set, each protected host (VM or bare metal) will be running an AlertLogic agent that is capable to examine network traffic traversing the NIC. The agent listens for all traffic and compares to a local signature database that is regularly updated.
+
+Upon matching a signature, the agent triggers and event and reports it to the AlertLogic virtual appliance that the agent was provisioned on. The appliance maintains track of these events and updates AlertLogic's NOC over a secure connection where the events are parsed and logged in the AlertLogic Portal platform.
+
+The virtual appliance manages the register agents and is also able to push updates, whether these are new signatures or software updates.
 
 
 <BR><HR>
@@ -73,9 +104,9 @@ AlertLogic Threat manager and Log manager products work similarly within Century
 
 **Pros**|**Cons**
 --------|----------
-Simpler network topology|Traffic across accounts is visible
-A single appliance may be used|The appliance may reach capacity.
-Least complexity of firewall rules|
+Simpler network topology.|Traffic across accounts is visible.
+A single appliance may be used.|The appliance may reach capacity.
+Least complexity of firewall rules.|
 
 ![IDS multitenant](../images/alertlogic/subacct_shared.png) 
 
@@ -98,9 +129,9 @@ Deploy virtual appliance|CenturyLink|The customer must request deployment via se
 
 
 <BR><HR>
-### Resources
+### Resources.
 
-#### Vendor documentation
+#### Vendor documentation.
 
 [AlertLogic Threat Manager Documentation](http://docs.alertlogic.com/#docs/threat_manager/about_threat_manager.htm%3FTocPath%3DThreat%2520Manager%7C_____0)
 
